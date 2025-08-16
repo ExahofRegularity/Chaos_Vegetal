@@ -189,7 +189,7 @@ document.querySelectorAll('.button').forEach((button, index) => {
         gsap.from(`.${haiku.infoClass} p`, {
         opacity: 0,
         x: -20,
-        duration: 1.2,
+        duration: 4.5,
         stagger: 0.2,
         ease: "power2.out",
         onComplete: () => { // Correction avec une tierce personne pour la décrémentation du compteur ajoutée au gsap
@@ -223,6 +223,7 @@ document.querySelectorAll('.button').forEach((button, index) => {
 
   });
 });
+
 
 
 
