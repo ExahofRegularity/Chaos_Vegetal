@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Végétal</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Marcellus&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="scripts/app.js" defer></script>
+</head>
+<body>
+    <div class="fresque">
+        <div class="board js-board">
+            <img src="assets/board_final.jpg" alt="Fresque racines noires arbre">
+
+
+            <div class="button leaf leaf--1">
+              <img src="assets/Feuille/Feuille01.png" alt="feuille noire bouton">
+            </div>
+
+            <div class="button leaf leaf--2">
+            <img src="assets/Feuille/Feuille02.png" alt="feuille noire bouton">
+            </div>
+
+            <div class="button leaf leaf--3">
+            <img src="assets/Feuille/Feuille03.png" alt="feuille noire bouton">
+            </div>
+
+            <div class="intro__message intro--image">
+            <h1>Cherchez</h1>
+            <img class="image--leaf" src="assets/Feuille/Feuille03.png" alt="feuille noire bouton">
+            <div class="arrows">
+              <div class="arrow--top">
+                <img src="assets/Flèche.png" alt="Flèche">
+              </div>
+              <div class="arrow--left">
+                <img src="assets/Flèche.png" alt="Flèche">
+              </div>
+              <div class="arrow--down">
+                <img src="assets/Flèche.png" alt="Flèche">
+              </div>
+              <div class="arrow--right">
+                <img src="assets/Flèche.png" alt="Flèche">
+              </div>
+            </div>
+            </div>
+
+            <div class="compteur compteur__image">
+              <h2><span id="compteur_num">3</span> X</h2>
+            <img class="image--compteur" src="assets/Feuille/Feuille03.png" alt="feuille noire image">
+            </div>
+            
+            <!--- Crédits pour le texte animé svg + gsap: https://youtu.be/ZW-nnG4U2d0?feature=shared -->
+            <svg class="info info__bloc1 info--1A" viewBox="0 0 3000 2000" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textPath1" d="M35 14L362 54.5M21.5 64.5L459 117.5M11 119L384 165.5" stroke="white"/>
+              </defs>
+              <text fill="#fff" >
+              <textPath class="text" xlink:href="#textPath1" startOffset="0%"> 
+                L'œuvre "Chaos végétal" est issue de l'artiste bruxelloise Tamar Kasparian.
+              </textPath>
+            </text>
+            </svg>
+
+            <svg class="info info__bloc1 info--1B" viewBox="0 0 3000 2000" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textPath2" d="M53 15L658 126M33.9961 42.5234L634 155.5M24.9961 85.5234L669.5 205.5M14.4961 128.023L628.5 234.5M5.99609 167.023L622 277.5" stroke="white"/>
+              </defs>
+              <text fill="#fff" >
+              <textPath class="text" xlink:href="#textPath2" startOffset="0%"> 
+                Installée dans le Jardin des Poètes à Namur, cette fresque chaotique illustre le concept de mutation perpétuelle, passant d'une simple branche ou racine épurée sur fond blanc à un enchevêtrement végétal dense.
+              </textPath>
+            </text>
+            </svg>
+
+            <svg class="info info__bloc1 info--1C" viewBox="0 0 3000 2000" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textPath3" d="M36.5 10L507 115M22 44L504.5 165.5M13.5 94L514 208M2.5 140.5L504.5 250" stroke="white"/>
+              </defs>
+              <text fill="#fff" >
+              <textPath class="text" xlink:href="#textPath3" startOffset="0%"> 
+                L’œuvre a été agrandie à plusieurs reprises, renforçant encore l’idée de prolifération qu’elle véhicule.
+              </textPath>
+            </text>
+            </svg>
+
+            <svg class="info info__bloc1 info--1D" viewBox="0 0 3000 2000" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textPath4" d="M11.5 41L567.5 78M6 85L641 126.5M5 133.5L626.5 174M5 174L619.5 211M14.75 5L466 31.5" stroke="white"/>
+              </defs>
+              <text fill="#fff" >
+              <textPath class="text" xlink:href="#textPath4" startOffset="0%"> 
+                “Chaos végétal” simule ainsi une nature foisonnante et envahissante, le tout au cœur d’un lieu qui célèbre la prose à Namur.
+              </textPath>
+            </text>
+            </svg>
+
+            <svg class="info info__bloc2 info--2A" viewBox="0 0 3000 2000" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textPath5" d="M89 26H791.5M0 51.5H783.5" stroke="white"/>
+              </defs>
+              <text fill="#fff" >
+              <textPath class="text" xlink:href="#textPath5" startOffset="0%"> 
+                Le Jardin des Poètes, accessible via le pôle muséal Les Bateliers, est un espace dédié à la poésie et à l'art.
+              </textPath>
+            </text>
+            </svg>
+
+            <svg class="info info__bloc2 info--2B" viewBox="0 0 3000 2000" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textPath6" d="M97.5 25H921M4.5 54H905M4.5 97.5H953.5" stroke="white"/>
+              </defs>
+              <text fill="#fff" >
+              <textPath class="text" xlink:href="#textPath6" startOffset="0%"> 
+                Outre "Chaos végétal", le jardin accueille des livres-poèmes accrochés aux murs, les chaises du sculpteur québécois Michel Goulet et des petites sculptures de l'artiste espagnol Isaac Cordal.
+              </textPath>
+            </text>
+            </svg>
+
+            <svg class="info info__bloc2 info--2C" viewBox="0 0 3000 2000" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textPath7" d="M39 143L490 25M30 196L495 65M27.5 249L570 106.5M38 302L492.5 170.5" stroke="white"/>
+              </defs>
+              <text fill="#fff" >
+              <textPath class="text" xlink:href="#textPath7" startOffset="0%"> 
+                Le jardin des poètes offre ainsi un environnement de cohésion pour les divers œuvres qui y sont présentes.
+              </textPath>
+            </text>
+            </svg>
+
+            <svg class="info info__bloc2 info--2D" viewBox="0 0 3000 2000" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textPath8" d="M35 20L506.5 17.5M26 49L614.5 65.5M26 87.5L622 106.5M26 134L609 159" stroke="white"/>
+              </defs>
+              <text fill="#fff" >
+              <textPath class="text" xlink:href="#textPath8" startOffset="0%"> 
+                Les livres-poèmes se trouvent par exemple parmi le “Chaos végétal”, comme une métaphore de la floraison poétique et artistique.
+              </textPath>
+            </text>
+            </svg>
+
+            <svg class="info info__bloc3 info--3A" viewBox="0 0 3000 2000" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textPath9" d="M25 14L745 43.5M17 55L765 88.5M21 104L721 139.5" stroke="white"/>
+              </defs>
+              <text fill="#fff" >
+              <textPath class="text" xlink:href="#textPath9" startOffset="0%"> 
+                Le travail de Tamar Kasparian, outre chaos végétal, s'inscrit dans une exploration des thèmes de la nature et de la transformation.
+              </textPath>
+            </text>
+            </svg>
+
+            <svg class="info info__bloc3 info--3B" viewBox="0 0 3000 2000" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textPath10" d="M36 200L436 7M30 242.5L380 66.5M39 285L411 112M58 323.5L421 145" stroke="white"/>
+              </defs>
+              <text fill="#fff" >
+              <textPath class="text" xlink:href="#textPath10" startOffset="0%"> 
+                Tamar Kasparian a notamment créé plusieurs œuvres sous l’appellation “Chaos végétal”.
+              </textPath>
+            </text>
+            </svg>
+
+            <svg class="info info__bloc3 info--3C" viewBox="0 0 3000 2000" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="textPath11" d="M45 63.5L515 12M6 103.5L480 48M21.5 147L465 87.5M21.5 185L470 133M28.5 227.5L482 170M30 264.5L489.5 206.5" stroke="white"/>
+              </defs>
+              <text fill="#fff" >
+              <textPath class="text" xlink:href="#textPath11" startOffset="0%"> 
+                Ces œuvres reflètent une réflexion, constamment présente chez elle, sur la mutation perpétuelle, la prolifération et l'interaction que nous avons avec la nature ou que la nature a avec nous.
+              </textPath>
+            </text>
+            </svg>
+
+              <div class="haïkus text-white-shadow">
+                <div class="haïku--1">
+                <p>Montagnes au loin
+                Où la chaleur du jour
+                S’en est allée.</p>
+                </div>
+
+                <div class="haïku--2">
+                <p>
+                  Les pétales de chrysanthème
+                  Se cambrent dans leur blancheur
+                  Sous la lune.
+                </p>
+                </div>
+
+                <div class="haïku--3">
+                <p>
+                 J’ai reçu un pétale tombé du cerisier.
+                  Ouvrant le poing 
+                  je n’y trouve rien.
+                </p>
+                </div>
+                
+              </div>
+
+              <div class="leaf__déco">
+                <div class="déco--1">
+                  <img src="assets/Feuille/FeuilleBlanche.png" alt="Feuille blanche">
+                </div>
+                <div class="déco--2">
+                  <img src="assets/Feuille/FeuilleBlanche.png" alt="Feuille blanche">
+                </div>
+                <div>
+                  <img src="assets/Feuille/FeuilleBlanche.png" alt="Feuille blanche">
+                </div>
+                <div>
+                  <img src="assets/Feuille/FeuilleBlanche.png" alt="Feuille blanche">
+                </div>
+              </div>
+    </div>
+    </div>
+
+    <footer>
+      <p>
+      <a href="https://exahofregularity.github.io/AR-Chaos-Vegetal/" target="_blank">AR</a>
+      </p>
+    </footer>
+
+</body>
+</html>
